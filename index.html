@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   
+   <div class="container">
+      <div>   
+           <div class="row">
+               <header class="col-md-12">
+                   <h1>Calculadora básica</h1>
+                </header>
+           </div>
+        </div>
+   
+   <br>
+   <br>
+    
+    <div class="container">
+        <div class="col-xs-2 col-sm-3 col-md-4  offset-md-4">
+        <form action="#" name="calculadora" id="calculadora">
+           <div class="row">
+                <div id="input-display" class="col-md-12">
+                    0
+                </div>
+            </div>    
+   
+            <div class="row">
+                <button type="button" class="btn btn-info col-md-3" value="Retr" onclick="retro()">Retr</button>
+                <button type="button" class="btn btn-info col-md-3 " value="CE" onclick="borradoParcial()">CE</button>
+                <button type="button" class="btn btn-info col-md-3" value="C" onclick="borradoTotal()">C</button>
+                <button type="button" class="btn btn-danger col-md-3" id="power">On/Off</button>
+            </div>
+            
+            <div class="row">
+                <button type="button" class="btn btn-dark col-md-3" value="7" onclick="numero('7')">7</button>
+                <button type="button" class="btn btn-dark col-md-3" value="8" onclick="numero('8')" >8</button>
+                <button type="button" class="btn btn-dark col-md-3" value="9" onclick="numero('9')">9</button>
+                <button type="button" class="btn btn-success col-md-3" value="/" onclick="operar('/')">/</button>
+
+            </div>
+        
+            <div class="row">
+                <button type="button" class="btn btn-dark col-md-3" value="4" onclick="numero('4')">4</button>
+                <button type="button" class="btn btn-dark col-md-3" value="5" onclick="numero('5')">5</button>
+                <button type="button" class="btn btn-dark col-md-3" value="6" onclick="numero('6')">6</button>
+                <button type="button" class="btn btn-success col-md-3" value="*" onclick="operar('*')">x</button>
+            </div>
+        
+            <div class="row">
+                <button type="button" class="btn btn-dark col-md-3" value="1" onclick="numero('1')">1</button>
+                <button type="button" class="btn btn-dark col-md-3" value="2" onclick="numero('2')">2</button>
+                <button type="button" class="btn btn-dark col-md-3" value="3" onclick="numero('3')">3</button>
+                <button type="button" class="btn btn-success col-md-3" value="-" onclick="operar('-')">-</button>
+            </div>
+        
+            <div class="row">
+                <button type="button" class="btn btn-dark col-md-3" value="0" onclick="numero('0')">0</button>
+                <button type="button" class="btn btn-dark col-md-3" value="." onclick="numero('.')">.</button>
+                <button type="button" class="btn btn-warning col-md-3" value="=" onclick="igualar()">=</button>
+                <button type="button" class="btn btn-success col-md-3" value="+" onclick="operar('+')">+</button>
+            </div>
+            
+        </form>
+        </div>
+    </div>
+    <br>
+    <div class="fluid-container">
+        <footer>
+            <p>Ana Isabel</p>
+        </footer>
+    </div>
+                      
+    
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/calculadora.js" ></script>
+</body>
+</html>
